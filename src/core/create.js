@@ -47,3 +47,5 @@ const create = params => {
     throw new Error(`create: ${error}`)
   }
 }
+
+export default create
