@@ -22,7 +22,7 @@ const setType = value => {
   }
 }
 
-const create = params => {
+const create = async params => {
   if (!process.env.TABLE_NAME) {
     throw new ReferenceError('TABLE_NAME environmental variable is required.')
   }
