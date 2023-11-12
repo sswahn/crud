@@ -1,0 +1,19 @@
+{
+  "name": "@sswahn/dynamo",
+  "version": "1.0.0-beta.0",
+  "license": "MIT",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "dynamo",
+    "AWS",
+    "DynamoDB",
+    "CRUD",
+    "node.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sswahn/dynamo"
+  }
+}
