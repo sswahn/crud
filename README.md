@@ -31,22 +31,11 @@ Tailored for serverless environments, the DynamoDB Utility Library maximizes eff
 ### 📦 Lightweight and Modular
 Designed with simplicity in mind, the library is lightweight and modular. Use only the functions you need, keeping your project clean and avoiding unnecessary bloat.
 
-### 📖 Comprehensive Documentation
-Access comprehensive documentation with usage examples, detailed function explanations, and guidelines to help you integrate the library seamlessly into your projects.
-
-### 🔄 Active Maintenance
-Benefit from continuous improvements and updates. The library is actively maintained, incorporating the latest best practices and optimizations for DynamoDB interactions.
-
-### 🤝 Open for Contributions
-Contribute to the library's growth! Join a vibrant community of developers and contribute to the DynamoDB Utility Library's success. See [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## Get Started
-
-Install the library in your project:
-
+## Installation
+Using npm.
 ```bash
-npm install your-dynamodb-utility-library
-
+npm install @sswahn/dynamo
+```
 
 ## Usage  
 
