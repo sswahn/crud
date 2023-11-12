@@ -20,13 +20,19 @@ const setType = (value) => {
 }
 
 const create = params => {
+  if (!process.env.TABLE_NAME) {
+    throw new ReferenceError('create: TABLE_NAME environmental variable is required.')
+  }
+  if (typeof process.env.TABLE_NAME !== 'string') {
+    throw new TypeError('create: TABLE_NAME must be of type string.')
+  }
   if (typeof params !== 'object') {
     throw new TypeError('create: argument must be of type object.')
   }
   try {
     const items = Object.entries(params).reduce((acc, [key, value]) => ({ ...acc, [key]: setType(value) }), {})
     const values = {
-      TableName: process.env.DATABASE,
+      TableName: process.env.TABLE_NAME,
       Item: items,
       ReturnValues: "ALL_OLD",
     }
