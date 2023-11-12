@@ -2,12 +2,6 @@
 
 This library simplifies common DynamoDB CRUD operations, providing a seamless and intuitive experience.  
 
-## Installation  
-Using npm.  
-```bash
-npm install @sswahn/dynamo
-```
-
 ## Features
 
 - **Seamless CRUD Operations**: Perform Create, Read, Update, and Delete operations with minimal effort. The library streamlines DynamoDB interactions.
