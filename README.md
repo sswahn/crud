@@ -25,7 +25,7 @@ import dynamo from '@sswahn/dynamo'
 Add items to your DynamoDB table. DynamoDB data types are automatically handled so no need to use properties such as S, or N, etc.
 ```javascript
 const data = {
-  UserId: 'user123',
+  UserId: 'user123', // Specify the partition key value
   Name: 'John Doe',
   Age: 30,
   IsActive: true,
