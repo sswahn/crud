@@ -3,7 +3,7 @@
 This library simplifies common DynamoDB CRUD operations, providing a seamless and intuitive experience.  
 
 ## Installation  
-Install using npm.  
+Using npm.  
 ```bash
 npm install @sswahn/dynamo
 ```
