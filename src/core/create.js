@@ -1,4 +1,3 @@
-
 const setType = value => {
   if (typeof value === "string") {
     return { S: value }
