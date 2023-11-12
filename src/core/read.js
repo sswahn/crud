@@ -7,7 +7,7 @@ const read = async (limit = undefined) => {
   if (typeof process.env.TABLE_NAME !== 'string') {
     throw new TypeError('TABLE_NAME must be of type string.')
   }
-  if (typeof limit !== 'number') {
+  if (limit && typeof limit !== 'number') {
     throw new TypeError('Argument must be of type number.')
   }
   try {
