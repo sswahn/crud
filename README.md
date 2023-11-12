@@ -10,11 +10,9 @@ npm install @sswahn/dynamo
 
 ## Features
 
-- **Seamless CRUD Operations**: Perform Create, Read, Update, and Delete operations with minimal effort. The library streamlines DynamoDB interactions, allowing you to focus on building, not managing data.
-- **Automatic Type Handling**: The library intelligently interprets JavaScript types and seamlessly translates them to DynamoDB-compatible formats, eliminating the need for manual conversions.
-- **Intuitive API**: The library provides an intuitive and easy-to-use API for DynamoDB interactions. Simple function calls abstract the complexities.
-- **Robust Error Handling**: The library incorporates robust error handling. Receive clear and actionable error messages for quick troubleshooting during development.
-- **Lightweight and Modular**: Designed with simplicity in mind, the library is lightweight and modular.
+- **Seamless CRUD Operations**: Perform Create, Read, Update, and Delete operations with minimal effort. The library streamlines DynamoDB interactions.
+- **Automatic Type Handling**: The library intelligently interprets JavaScript types and seamlessly translates them to DynamoDB-compatible formats.
+- **Robust Error Handling**: The library incorporates robust error handling. Receive clear and actionable error messages for quick troubleshooting.
 
 ## Installation
 Using npm.
