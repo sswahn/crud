@@ -1,6 +1,6 @@
 import { DynamoDBClient, UpdateItemCommand } from '@aws-sdk/client-dynamodb'
 
-const update = (params, key) => {
+const update = async (params, key) => {
   if (!process.env.TABLE_NAME) {
     throw new ReferenceError('TABLE_NAME environmental variable is required.')
   }
