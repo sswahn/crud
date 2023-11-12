@@ -30,25 +30,31 @@ import dynamo from '@sswahn/dynamo'
 ```
 
 ### Create
-Add items to your DynamoDB table with ease. The library automatically handles data types, making it simple to persist JavaScript objects in DynamoDB.
+Add items to your DynamoDB table. DynamoDB data types are automatically handled so no need to use properties such as S, or N, etc.
 ```javascript
 const response = await dynamo.create(data)
 ```  
 
 ### Read
-Retrieve items from your DynamoDB table effortlessly. Optionally, set a limit for the scan to control the number of returned items.
+Retrieve items from your DynamoDB table. Optionally, set a limit for the scan to control the number of returned items.
 ```javascript
 const response = await dynamo.read(limit)
+```
+
+### Read One
+Retrieve an individual item from your DynamoDB table using its key.
+```javascript
+const response = await dynamo.readOne(key)
 ```  
 
 ### Update
-Seamlessly update attributes of existing items in your DynamoDB table. Specify the attributes to update and the key of the item to modify. 
+Update attributes of existing items in your DynamoDB table. Specify the attributes to update and the key of the item to modify. 
 ```javascript
 const response = await dynamo.update(data, key)
 ```
 
 ### Remove
-Effortlessly delete items from your DynamoDB table. Provide the key of the item to remove.
+Delete an item from your DynamoDB table. Provide the key of the item to remove.
 ```javascript
 const response = await dynamo.remove(key)
 ```  
