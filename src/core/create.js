@@ -1,3 +1,5 @@
+import { DynamoDBClient, PutItemCommand } from '@aws-sdk/client-dynamodb'
+
 const setType = value => {
   if (typeof value === "string") {
     return { S: value }
@@ -20,6 +22,7 @@ const setType = value => {
   if (typeof value === "object") {
     return { M: Object.entries(value).reduce((acc, [key, value]) => ({ ...acc, [key]: setType(value) }), {}) }
   }
+  throw new TypeError(`Unsupported type: ${typeof value}`)
 }
 
 const create = async params => {
