@@ -1,6 +1,6 @@
 import { DynamoDBClient, ScanCommand } from '@aws-sdk/client-dynamodb'
 
-const read = async (limit = 10) => {
+const read = async (limit = undefined) => {
   if (!process.env.TABLE_NAME) {
     throw new ReferenceError('TABLE_NAME environmental variable is required.')
   }
@@ -11,9 +11,10 @@ const read = async (limit = 10) => {
     throw new TypeError('Argument must be of type number.')
   }
   try {
+    const limitation = limit ? { Limit: limit } : {}
     const values = {
       TableName: process.env.TABLE_NAME,
-      Limit: limit 
+      ...limitation
     }
     const client = new DynamoDBClient()
     const command = new ScanCommand(values)
