@@ -70,7 +70,12 @@ const key = {
   UserId: 'user123', // Specify the partition key value
 }
 const response = await dynamo.remove(key)
-```  
+```
+
+## Environmental Variables
+Ensure the following environmental variables are set:
+
+- TABLE_NAME: The name of your DynamoDB table.
 
 ## License
 Dynamo is [MIT Licensed](https://github.com/sswahn/dynamo/blob/main/LICENSE)
