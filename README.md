@@ -1,4 +1,4 @@
-# Dynamo
+# Dynamo · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/dynamo/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/dynamo)
 
 This library simplifies common DynamoDB CRUD operations, providing a seamless and intuitive experience.  
 
@@ -10,26 +10,11 @@ npm install @sswahn/dynamo
 
 ## Features
 
-### 🚀 Seamless CRUD Operations
-Perform Create, Read, Update, and Delete operations with minimal effort. The library streamlines DynamoDB interactions, allowing you to focus on building, not managing data.
-
-### 🌐 DynamoDB Type Conversion
-Effortlessly convert JavaScript types to DynamoDB types using the `setType` function. Ensure consistent and accurate data storage with automatic type handling.
-
-### ⚙️ Automatic Type Handling
-Forget about data type headaches. The library intelligently interprets JavaScript types and seamlessly translates them to DynamoDB-compatible formats, eliminating the need for manual conversions.
-
-### 📚 Intuitive API
-The library provides an intuitive and easy-to-use API for DynamoDB interactions. Simple function calls abstract the complexities, making it accessible for both beginners and experienced developers.
-
-### 🧪 Robust Error Handling
-Rest easy knowing that the library incorporates robust error handling. Receive clear and actionable error messages for quick troubleshooting during development.
-
-### 🌐 Serverless Ready
-Tailored for serverless environments, the DynamoDB Utility Library maximizes efficiency and resource utilization, ensuring optimal performance in your serverless applications.
-
-### 📦 Lightweight and Modular
-Designed with simplicity in mind, the library is lightweight and modular. Use only the functions you need, keeping your project clean and avoiding unnecessary bloat.
+- **Seamless CRUD Operations**: Perform Create, Read, Update, and Delete operations with minimal effort. The library streamlines DynamoDB interactions, allowing you to focus on building, not managing data.
+- **Automatic Type Handling**: The library intelligently interprets JavaScript types and seamlessly translates them to DynamoDB-compatible formats, eliminating the need for manual conversions.
+- **Intuitive API**: The library provides an intuitive and easy-to-use API for DynamoDB interactions. Simple function calls abstract the complexities.
+- **Robust Error Handling**: The library incorporates robust error handling. Receive clear and actionable error messages for quick troubleshooting during development.
+- **Lightweight and Modular**: Designed with simplicity in mind, the library is lightweight and modular.
 
 ## Installation
 Using npm.
