@@ -8,6 +8,46 @@ Install using npm.
 npm install @sswahn/dynamo
 ```
 
+## Features
+
+### 🚀 Seamless CRUD Operations
+Perform Create, Read, Update, and Delete operations with minimal effort. The library streamlines DynamoDB interactions, allowing you to focus on building, not managing data.
+
+### 🌐 DynamoDB Type Conversion
+Effortlessly convert JavaScript types to DynamoDB types using the `setType` function. Ensure consistent and accurate data storage with automatic type handling.
+
+### ⚙️ Automatic Type Handling
+Forget about data type headaches. The library intelligently interprets JavaScript types and seamlessly translates them to DynamoDB-compatible formats, eliminating the need for manual conversions.
+
+### 📚 Intuitive API
+The library provides an intuitive and easy-to-use API for DynamoDB interactions. Simple function calls abstract the complexities, making it accessible for both beginners and experienced developers.
+
+### 🧪 Robust Error Handling
+Rest easy knowing that the library incorporates robust error handling. Receive clear and actionable error messages for quick troubleshooting during development.
+
+### 🌐 Serverless Ready
+Tailored for serverless environments, the DynamoDB Utility Library maximizes efficiency and resource utilization, ensuring optimal performance in your serverless applications.
+
+### 📦 Lightweight and Modular
+Designed with simplicity in mind, the library is lightweight and modular. Use only the functions you need, keeping your project clean and avoiding unnecessary bloat.
+
+### 📖 Comprehensive Documentation
+Access comprehensive documentation with usage examples, detailed function explanations, and guidelines to help you integrate the library seamlessly into your projects.
+
+### 🔄 Active Maintenance
+Benefit from continuous improvements and updates. The library is actively maintained, incorporating the latest best practices and optimizations for DynamoDB interactions.
+
+### 🤝 Open for Contributions
+Contribute to the library's growth! Join a vibrant community of developers and contribute to the DynamoDB Utility Library's success. See [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## Get Started
+
+Install the library in your project:
+
+```bash
+npm install your-dynamodb-utility-library
+
+
 ## Usage  
 
 ### Import
