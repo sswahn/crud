@@ -2,16 +2,16 @@ import { DynamoDBClient, UpdateItemCommand } from '@aws-sdk/client-dynamodb'
 
 const update = (params, key) => {
   if (!process.env.TABLE_NAME) {
-    throw new ReferenceError('create: TABLE_NAME environmental variable is required.')
+    throw new ReferenceError('TABLE_NAME environmental variable is required.')
   }
   if (typeof process.env.TABLE_NAME !== 'string') {
-    throw new TypeError('create: TABLE_NAME must be of type string.')
+    throw new TypeError('TABLE_NAME must be of type string.')
   }
   if (typeof params !== 'object') {
-    throw new TypeError('update: first argument must be of type object.')
+    throw new TypeError('First argument must be of type object.')
   }
   if (typeof key !== 'object') {
-    throw new TypeError('update: second argument must be of type object.')
+    throw new TypeError('Second argument must be of type object.')
   }
   try {
     const updateExpression = 'SET ' + Object.keys(params).map(attribute => `${attribute} = :${attribute}`).join(', ')
@@ -27,7 +27,7 @@ const update = (params, key) => {
     const command = new UpdateItemCommand(values)
     return client.send(command)
   } catch (error) {
-    throw new Error(error)
+    throw new Error(`update: ${error}`)
   }
 }
 
